@@ -1,0 +1,14 @@
+<p>Buscar produto pelo id</p>
+
+<input type="text" name="Buscador" placeholder="Digite o ID" #Id class="form-control d-inline-block w-50 me-2">
+<button type="submit" (click)="Buscar(Id.value)" class="btn btn-primary">Buscar</button>
+
+@if(produto) {
+    <div class="card my-4 p-3 shadow-sm">
+        <p><strong class="text-secondary">{{produto.id}}</strong></p>
+        <p><strong class="text-secondary">{{produto.marca}}</strong></p>
+        <p><strong class="text-secondary">{{produto.nome}}</strong></p>
+        <p><strong class="text-secondary">{{produto.preco}}</strong></p>
+        <p><strong class="text-secondary">{{produto.quantidade}}</strong></p>
+    </div>
+}
